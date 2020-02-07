@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Flipkart Test Automation" verbose="3"  parallel="tests" thread-count="250" >
+ 
+ <parameter name="seleniumHost" value="localhost" />
+ <parameter name="seleniumPort" value="4444" />
+ <parameter name="browser" value="CHROME" />    
+ <parameter name="url" value="http://maestrosmusic.net/"/>
+ 
+ <test name="MM Starting phase" thread-count="3" >
+        <classes>        
+          <class name= "testClass.LoginApp"/>        
+           
+    </classes> 
+    </test>
+ </suite>

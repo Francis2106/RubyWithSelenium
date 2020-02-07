@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="250" guice-stage="DEVELOPMENT" verbose="3" name="Failed suite [Flipkart Test Automation]" parallel="tests">
+  <parameter name="browser" value="CHROME"/>
+  <parameter name="url" value="http://maestrosmusic.net/"/>
+  <parameter name="seleniumPort" value="4444"/>
+  <parameter name="seleniumHost" value="localhost"/>
+  <test name="Flipkart Starting phase(failed)" parallel="tests">
+    <classes>
+      <class name="testClass.LoginApp">
+        <methods>
+          <include name="tearDown"/>
+          <include name="genericSetUp"/>
+          <include name="HomepageOption_TC_001"/>
+        </methods>
+      </class> <!-- testClass.LoginApp -->
+    </classes>
+  </test> <!-- Flipkart Starting phase(failed) -->
+</suite> <!-- Failed suite [Flipkart Test Automation] -->
